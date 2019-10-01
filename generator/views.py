@@ -24,17 +24,20 @@ def index(request):
         return render(request, 'generator/index.html')
 
 
-def cisco_legacy(request):
-    if request.method == 'POST':
-        # getting values from post
-        vendor = request.POST.get('vendor')
-        model = request.POST.get('model')
+def viptela(request):
+    return render(request, 'generator/placeholder.html')
 
-        # adding the values in a context variable
-        context_platform = {
-            'vendor': vendor,
-            'model': model
-        }
+
+def adva(request):
+    return render(request, 'generator/placeholder.html')
+
+
+def cisco_legacy(request):
+    return render(request, 'generator/placeholder.html')
+
+
+def placeholder(request):
+    return render(request, 'generator/placeholder.html')
 
 
 def about(request):
