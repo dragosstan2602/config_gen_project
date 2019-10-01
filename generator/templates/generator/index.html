@@ -1,0 +1,39 @@
+{% extends "generator/base.html" %}
+{% block content_body %}
+<h2>Config Generator</h2>
+<form method="post" action="/getdata/">
+    <table>
+        <tr>
+            <td>Vendor:</td>
+            <td>
+                <label>Select list</label>
+                <select name = "vendor" id = "VendorList">
+                    <option value = "Cisco Legacy">Cisco Legacy</option>
+                    <option value = "Cisco Viptela">Cisco Viptela</option>
+                    <option value = "Juniper">Juniper</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Model:</td>
+            <td>
+                <label>Select list</label>
+                <select name = "model" id = "ModelList">
+                    <option value = "c891F-K9">c891F-K9</option>
+                    <option value = "vEdge 100b">vEdge 100b</option>
+                    <option value = "ISR4451">ISR4451</option>
+                    <option value = "SRX340">SRX340</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <button>Next Step</button>
+            </td>
+        </tr>
+    </table>
+</form>
+{% endblock %}

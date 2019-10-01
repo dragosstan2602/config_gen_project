@@ -1,0 +1,40 @@
+{% extends "generator/base.html" %}
+{% block content_body %}
+<h2>Cisco Legacy Config Generator</h2>
+<p>
+    <form method="post" action="/getdata/">
+        <table>
+            <tr>
+                <td>Vendor: </td>
+                <td><strong>{{ vendor }}</strong></td>
+            </tr>
+            <tr>
+                <td>Model: </td>
+                <td><strong>{{ model }}</strong></td>
+            </tr>
+        </table>
+    </form>
+</p>
+<p>
+    <form method="post" action="/getdata/">
+        <table>
+            <tr>
+                <td>Device Name:</td>
+                <td><input type="text" name="device_name"/></td>
+            </tr>
+            <tr>
+                <td>MGMT IP:</td>
+                <td><input type="text" name="mgmt_ip"/></td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <button>Generate Config</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</p>
+{% endblock %}
