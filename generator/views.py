@@ -25,11 +25,11 @@ def index(request):
 
 
 def viptela(request):
-    return render(request, 'generator/placeholder.html')
+    return render(request, 'generator/viptela.html')
 
 
 def adva(request):
-    return render(request, 'generator/placeholder.html')
+    return render(request, 'generator/adva.html')
 
 
 def cisco_legacy(request):
